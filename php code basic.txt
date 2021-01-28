@@ -1,0 +1,9 @@
+INSERT INTO `mite_rfid_attendance`(`rfid`, `login_date`, `login_time`) VALUES ('123456', '01/15/2020', '10:04')
+
+
+
+
+UPDATE `mite_rfid_attendance` SET `logout_time`='17:20', `comments`='Success' WHERE `login_date`='2020-01-15' AND `rfid` = '123457'
+
+
+SELECT * FROM `mite_rfid_attendance` WHERE `rfid`='123456' AND `login_date` = '2020-01-15'
